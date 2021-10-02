@@ -25,7 +25,7 @@ typedef unordered_map<ll,ll> umap;
 #define me(v) *std::max_element((v).begin(),(v).end());
 #define nei(v) std::min_element((v).begin(),(v).end()) - (v).begin() ;
 #define ne(v) *std::min_element((v).begin(),(v).end());
-#define case(i) cout<<"Case #"<<i<<": ";
+#define case(i) cout<<"Case #"<<i<<": "
 #define tolower(s) transform(s.begin(),s.end(),s.begin,::tolower);
 #define toupper(s) transform(s.begin(),s.end(),s.begin,::toupper);
 ll max(ll a, ll b){ return a > b ? a : b; }
