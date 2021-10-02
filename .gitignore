@@ -22,3 +22,6 @@ tags
 
 # Mac Files
 *.DS_Store
+
+#C++ output files
+a.out
