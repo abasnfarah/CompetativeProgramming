@@ -1,4 +1,4 @@
-#include "/Users/abasfarah/workspaces/competativeProgramming/stdc++.h"
+#include <bits/stdc++.h>
 
 using namespace std;
 typedef long long ll;
