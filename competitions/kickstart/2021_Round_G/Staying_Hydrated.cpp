@@ -54,14 +54,14 @@ const ll inf = numeric_limits<ll>::max();
 void solve(ll t, ll k, vvll &v){
     // solution comes here
     debug(t, k, v);
-    loop(i, 0, 2){
+    loop(i, 0, v.size()){
         sort(all(v[i]));
     }
     case(t);
     loop(i, 0, 2){
-        ll x = ceil((double)(k*2) / 2) - 1;
+        ll x = ceil((double)2 / 2) - 1;
         debug(x,v[i]);
-        ll o = v[i][(ceil((double)(k*2) / 2) - 1)];
+        ll o = v[i][(ceil((double)2 / 2) - 1)];
         pff(o);
     }
     pf("");
@@ -82,12 +82,9 @@ int main() {
         while(k){
             ll x1, x2, y1, y2;
             vll val;
-            vll val2;
             scanf("%lld %lld %lld %lld", &x1, &y1, &x2, &y2);
-            val = {x1, y1};
-            val2 = {x2, y2};
+            val = {x1+x2, y1+y2};
             v.push_back(val);
-            v.push_back(val2);
             --k;
         }
         solve(t, k, v);
